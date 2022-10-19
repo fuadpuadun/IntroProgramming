@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class No1 {
 	  public static void main(String[] args) {
 		  boolean next = true;
-		  int firstNum=1, amount, difference;
 		  int score=0;
 		  
 		  Scanner input = new java.util.Scanner(System.in);
@@ -25,20 +24,22 @@ public class No1 {
 		        input.nextLine();
 			  
 			  score = level1(score);
-			  
-			  /*System.out.print ("Belajar Deret Aritmatika, Geometri, dan menghitung Faktorial\n");
-			  
-			  System.out.print("Masukkan banyak angka yang ingin dicetak [2..10] : ");
-		      amount = input.nextInt();
-		      
-		      System.out.print("Masukkan beda masing - masing angka [2..9] : ");
-		      difference = input.nextInt();
-		      input.nextLine();
-		      
-		      if((amount < 2) || (amount > 10) || (difference < 2) || (difference > 9)) {
-		    	  System.out.print("Angka Diluar Batas !");
-		      } */
+			  //Test
 			  System.out.print (score);
+			  
+			  if(score > 70) {
+				  score = 0;
+			  }
+			  
+			  //develop to level 2
+			  //score = level2(score);
+			  
+			  if(score > 70) {
+				  score = 0;
+			  }
+			  
+			  //develop to level 3
+			  //score = level3(score);
 			  
 		      System.out.print ("\n Anda mau ulang [y/t] : ");
 		      String check = input.nextLine();
@@ -74,9 +75,7 @@ public class No1 {
 			  //check strLength
 			  if(guess.length()>=3 && guess.length()<=6) {
 				  for(int j= 0; j<= level1.length - 1;j++) {
-					  if(guess.equals(level1[j])) {
-						  //checker[x] = level1[j];
-						  
+					  if(guess.equals(level1[j])) {						  
 						  for(int k= 0; k<= checker.length - 1;k++) {
 							  if(guess.equals(checker[k])) {
 								  System.out.println("You had already type this word before..");
@@ -87,29 +86,11 @@ public class No1 {
 								  checker[x] = guess;
 								  x++;
 							  }
-							  /*if(x==0) {
-								  score+=10;
-								  System.out.println("#Right. Score : " + score);
-								  x++;
-								  k=checker.length;
-							  } else {
-								  if(guess.equals(checker[k])) {
-									  System.out.println("You had already type this word before..");
-									  k=checker.length;
-									  x++;
-									  //test=true; break;
-								  } else {
-									  score+=10;
-									  System.out.println("#Right. Score : " + score);
-								  }
-							  }*/
-							  
 						  }
-						  //x++;
 					  }
 				  }
 			  } else System.out.println("Answer too short");
-		  }		  
+		  }
 		  return score;
 	  }
 }
