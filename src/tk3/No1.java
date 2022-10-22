@@ -66,6 +66,11 @@ public class No1 {
 		  int x=0;
 		  boolean test;
 		  
+		  System.out.println(""
+	                +"Level 1"+"\n"
+	                +"-------"+"\n"
+	                +"d     e     t     t     l     i"+"\n");
+		  
 		  Scanner scan = new java.util.Scanner(System.in);
 		  
 		  String guess="";
@@ -73,7 +78,6 @@ public class No1 {
 		  for(int i= 1; i<=10;i++) {
 			  System.out.print(i+"> Your Answer: ");
 			  guess=scan.nextLine();
-			  
 			  //check strLength
 			  if(guess.length()>=3 && guess.length()<=6) {
 				  for(int j= 0; j<= level1.length - 1;j++) {
