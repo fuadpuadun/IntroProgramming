@@ -76,7 +76,7 @@ public class No1 {
 	  
 	  public static int level1(int score) {
 		  //init KJ
-		  String[] level1={"","die","led","lei","let","lid","lie","lit","tie","deli","diet","\n",
+		  String[] level={"","die","led","lei","let","lid","lie","lit","tie","deli","diet","\n",
                   "edit","idle","lied","tide","tied","tile","tilt","tilde","tiled","title","\n",
                   "tilted","titled"};
 		  String[] checker = new String[10];
@@ -97,8 +97,8 @@ public class No1 {
 			  guess=scan.nextLine();
 			  //check strLength
 			  if(guess.length()>=3 && guess.length()<=6) {
-				  for(int j= 0; j<= level1.length - 1;j++) {
-					  if(guess.equals(level1[j])) {						  
+				  for(int j= 0; j<= level.length - 1;j++) {
+					  if(guess.equals(level[j])) {						  
 						  for(int k= 0; k<= checker.length - 1;k++) {
 							  if(guess.equals(checker[k])) {
 								  System.out.println("You had already type this word before..");
@@ -124,7 +124,7 @@ public class No1 {
 	  
 	  public static int level2(int score) {
 		  //init KJ
-		  String[] level1={"", "ace", "can", "sac", "sea", "sec", "see", "aces", "acne", "cane", "cans", "\n",
+		  String[] level={"", "ace", "can", "sac", "sea", "sec", "see", "aces", "acne", "cane", "cans", "\n",
 		            "case", "ease", "sane", "scan","seen","acnes","canes","cease","cense","scene", "\n",
 		            "encase", "seance"};
 		  String[] checker = new String[10];
@@ -145,8 +145,8 @@ public class No1 {
 			  guess=scan.nextLine();
 			  //check strLength
 			  if(guess.length()>=3 && guess.length()<=6) {
-				  for(int j= 0; j<= level1.length - 1;j++) {
-					  if(guess.equals(level1[j])) {						  
+				  for(int j= 0; j<= level.length - 1;j++) {
+					  if(guess.equals(level[j])) {						  
 						  for(int k= 0; k<= checker.length - 1;k++) {
 							  if(guess.equals(checker[k])) {
 								  System.out.println("You had already type this word before..");
@@ -171,7 +171,7 @@ public class No1 {
 	  
 	  public static int level3(int score) {
 		  //init KJ
-		  String[] level1={"", "eon", "hen", "her", "hoe", "hon", "ken", "nor", "one", "ore", "rho", "\n",
+		  String[] level={"", "eon", "hen", "her", "hoe", "hon", "ken", "nor", "one", "ore", "rho", "\n",
                   "roe", "hero", "hoer", "hone", "honk", "horn", "kern", "oner", "heron", "honer", "\n",
                   "honker"};
 		  String[] checker = new String[10];
@@ -192,8 +192,8 @@ public class No1 {
 			  guess=scan.nextLine();
 			  //check strLength
 			  if(guess.length()>=3 && guess.length()<=6) {
-				  for(int j= 0; j<= level1.length - 1;j++) {
-					  if(guess.equals(level1[j])) {						  
+				  for(int j= 0; j<= level.length - 1;j++) {
+					  if(guess.equals(level[j])) {						  
 						  for(int k= 0; k<= checker.length - 1;k++) {
 							  if(guess.equals(checker[k])) {
 								  System.out.println("You had already type this word before..");
