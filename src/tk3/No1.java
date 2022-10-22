@@ -21,11 +21,13 @@ public class No1 {
 		                +"3. To get through to next level, you have to score 70points each level."+"\n"
 		                +"\n"
 		                +"Press Enter to START!");
-		        input.nextLine();
+			  
+			  //get enter
+			  input.nextLine();
 			  
 			  score = level1(score);
 			  //Test
-			  System.out.print (score);
+			  //System.out.print (score);
 			  
 			  if(score > 70) {
 				  score = 0;
@@ -84,6 +86,7 @@ public class No1 {
 								  score+=10;
 								  System.out.println("#Right. Score : " + score);
 								  checker[x] = guess;
+								  k=checker.length;
 								  x++;
 							  }
 						  }
