@@ -10,6 +10,6 @@ public class W12 {
 
 		System.out.println(myArray[5]);
 
-		System.out.println(myArray[6]);
+		//System.out.println(myArray[6]);
 	}
 }

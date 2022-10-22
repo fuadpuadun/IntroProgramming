@@ -30,8 +30,6 @@ public class No1 {
 			  
 			  score1=0;
 			  score1 = level1(score1);
-			  //Test
-			  //System.out.print (score);
 			  
 			  // level
 			  if(score1 >= 70) {
