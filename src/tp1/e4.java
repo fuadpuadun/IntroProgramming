@@ -12,7 +12,7 @@ public class e4 {
 		  label:
 		  while(next) {
 			  
-			  System.out.print ("Belajar Deret Aritmatika, Geometri, dan menghitung Faktorial\n");
+			  System.out.print("Belajar Deret Aritmatika, Geometri, dan menghitung Faktorial\n");
 			  
 			  System.out.print("Masukkan banyak angka yang ingin dicetak [2..10] : ");
 		      amount = input.nextInt();
